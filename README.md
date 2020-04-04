@@ -192,4 +192,16 @@ class CreatePost extends Component {
 export default CreatePost;
 
 ```
-
+## Pass Props in react
+```
+ render(props){      // add props to function
+        return(
+            <div className={`alert alert-${this.props.color}`} role="alert"> // then bind the props wherever you want.
+                This is a primary alert—check it out!
+            </div>
+        )
+    }
+    
+    // In your html pass props value 
+     <BaseAlert color="danger" />
+```
