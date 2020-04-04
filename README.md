@@ -3,7 +3,7 @@
 Small docs for React.
 
 ## React routing
-
+```
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'; // import BrowserRouter & Route from react-router-dom
 import './App.css';
@@ -36,21 +36,27 @@ function App() {
 
 export default App;
 
+```
+
 ## Pass params in url, i.e id, slug
+```
 import { Link } from 'react-router-dom'; //first of all import Link from react-router-dom
 
 <Link  to={`show/${PostData[key].slug}`} className="btn btn-primary btn-sm" >Read More ></Link> //then pass the slug or id with route like that
 
 <Route path="/show/:id" component={Show} /> // the route should have /:id
+```
 
 ## Redirect in React
 
+```
 this.props.history.push('/')
+```
 
 ## Axios call - get, post, patch, delete
 
 ### Post call -
-
+```
 import React, { Component } from 'react';
 import axios from 'axios'; //first import axios
 import CKEditor from '@ckeditor/ckeditor5-react';
@@ -184,4 +190,6 @@ class CreatePost extends Component {
 }
  
 export default CreatePost;
+
+```
 
