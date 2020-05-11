@@ -2,6 +2,9 @@
 
 Small docs for React.
 
+## Helpful links
+- [create react app](https://create-react-app.dev/)
+
 ## React routing
 ```
 import React from 'react';
